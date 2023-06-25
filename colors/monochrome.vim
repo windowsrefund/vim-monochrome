@@ -74,7 +74,7 @@ endfunction
 call s:hi('Normal')
 call s:hi('Cursor', s:black, s:lgray)
 call s:hi('CursorLine', s:default_lst, s:bgray, s:none)
-call s:hi('CursorLineNr', s:white, s:default_bg, s:bold)
+call s:hi('CursorLineNr', s:white, s:default_bg, s:none)
 call s:hi('ColorColumn', s:default_fg, s:bgray)
 call s:hi('Search', s:white, s:sblue)
 call s:hi('Visual', s:white, s:sblue)
