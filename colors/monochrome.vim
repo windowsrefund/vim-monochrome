@@ -84,8 +84,8 @@ call s:hi('ErrorMsg', s:white, s:red)
 call s:hi('NonText', s:dgray)
 
 " Folding.
-call s:hi('FoldColumn', s:dgray)
-call s:hi('Folded')
+hi clear FoldColumn
+hi clear Folded
 
 " Line numbers gutter.
 call s:hi('LineNr', s:dgray)
