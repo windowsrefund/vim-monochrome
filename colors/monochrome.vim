@@ -109,7 +109,7 @@ call s:hi('PmenuSel', s:sblue, s:white)
 call s:hi('Todo', s:black, s:yellow, s:bold)
 
 " Signs.
-call s:hi('SignColumn')
+hi clear SignColumn
 
 "
 " --- Programming languages ----------------------------------------------------
