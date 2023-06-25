@@ -102,8 +102,8 @@ call s:hi('helpHyperTextJump', s:sblue, s:default_bg, s:underline)
 call s:hi('helpNote')
 
 " Popup menu.
-call s:hi('Pmenu', s:white, s:sblue)
-call s:hi('PmenuSel', s:sblue, s:white)
+hi clear Pmenu
+call s:hi('PmenuSel', s:black, s:cgray)
 
 " Notes.
 call s:hi('Todo', s:black, s:yellow, s:bold)
