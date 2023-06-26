@@ -111,9 +111,6 @@ call s:hi('Todo', s:black, s:yellow, s:bold)
 " Signs.
 hi clear SignColumn
 
-" Diagnostics
-call s:hi('Diagnostics', s:yellow)
-
 "
 " --- Programming languages ----------------------------------------------------
 "
