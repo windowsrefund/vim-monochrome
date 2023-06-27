@@ -216,8 +216,9 @@ call s:hi('diffNewFile', s:cgray)
 call s:hi('diffIndexLine', s:cgray)
 call s:hi('diffLine', s:cgray)
 call s:hi('diffSubname', s:cgray)
-call s:hi('diffAdded', s:white, s:green)
-call s:hi('diffRemoved', s:white, s:red)
+call s:hi('diffAdded', s:green)
+call s:hi('diffRemoved', s:red)
+call s:hi('DiffChange', s:sblue)
 
 
 "
