@@ -113,7 +113,9 @@ call s:hi('Todo', s:black, s:yellow, s:bold)
 hi clear SignColumn
 
 " Diagnostic
-call s:hi('DiagnosticHint', s:yellow)
+call s:hi('DiagnosticError', s:red)
+call s:hi('DiagnosticWarn', s:yellow)
+call s:hi('DiagnosticHint', s:default_fg)
 "
 " --- Programming languages ----------------------------------------------------
 "
@@ -219,7 +221,7 @@ call s:hi('diffSubname', s:cgray)
 call s:hi('diffAdded', s:green)
 call s:hi('diffRemoved', s:red)
 hi clear DiffChange
-call s:hi('DiffChange', s:sblue)
+call s:hi('DiffChange', s:yellow)
 
 
 "
@@ -261,7 +263,5 @@ call s:hi('NeomakeWarning', s:yellow)
 
 "
 " --- Indent-blankline ------------------------------------------------------------------
-" from https://github.com/shaunsingh/nord.nvim/blob/master/lua/nord/theme.lua
-call s:hi('IndentBlanklineChar', s:dgray)
-call s:hi('IndentBlanklineContextChar', s:dgray)
+call s:hi('IndentBlanklineContextChar', s:sblue)
 
