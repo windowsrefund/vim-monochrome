@@ -20,8 +20,8 @@ let s:lgray  = ['LightGray', 255]
 let s:cgray  = ['#737373', 243]
 let s:dgray  = ['DarkGray', 248]
 let s:sblue  = ['#778899', 67]
-" From https://github.com/shaunsingh/nord.nvim/blob/master/lua/nord/named_colors.lua
-let s:yellow = ['#D68779', 226]
+" From https://github.com/gbprod/nord.nvim/blob/main/lua/nord/colors.lua
+let s:yellow = ['#EBCBBB', 226]
 let s:red    = ['#BF616A', 160]
 let s:green  = ['#A3BE8C', 28]
 
@@ -78,7 +78,7 @@ call s:hi('CursorLine', s:default_lst, s:bgray, s:none)
 call s:hi('CursorLineNr', s:white, s:default_bg, s:none)
 call s:hi('ColorColumn', s:default_fg, s:bgray)
 call s:hi('Search', s:white, s:sblue)
-call s:hi('Visual', s:white, s:sblue)
+call s:hi('Visual', s:black, s:cgray)
 call s:hi('ErrorMsg', s:white, s:red)
 
 " Tildes at the bottom of a buffer, etc.
@@ -95,7 +95,7 @@ call s:hi('LineNr', s:dgray)
 call s:hi('SpecialKey', s:sblue, s:default_bg, s:bold)
 
 " File browsers.
-call s:hi('Directory', s:white, s:default_bg, s:bold)
+call s:hi('Directory', s:white, s:default_bg, s:none)
 
 " Help.
 call s:hi('helpSpecial')
@@ -258,3 +258,10 @@ call s:hi('NeomakeError', s:yellow)
 call s:hi('NeomakeInfo', s:default_fg, s:default_bg, s:bold)
 call s:hi('NeomakeMessage')
 call s:hi('NeomakeWarning', s:yellow)
+
+"
+" --- Indent-blankline ------------------------------------------------------------------
+" from https://github.com/shaunsingh/nord.nvim/blob/master/lua/nord/theme.lua
+call s:hi('IndentBlanklineChar', s:dgray)
+call s:hi('IndentBlanklineContextChar', s:dgray)
+
