@@ -20,9 +20,10 @@ let s:lgray  = ['LightGray', 255]
 let s:cgray  = ['#737373', 243]
 let s:dgray  = ['DarkGray', 248]
 let s:sblue  = ['#778899', 67]
-let s:yellow = ['Yellow', 226]
-let s:red    = ['#b6403a', 160]
-let s:green  = ['#478226', 28]
+" From https://github.com/shaunsingh/nord.nvim/blob/master/lua/nord/named_colors.lua
+let s:yellow = ['#EBCBBB', 226]
+let s:red    = ['#BF616A', 160]
+let s:green  = ['#A3BE8C', 28]
 
 let s:default_fg = s:lgray
 let s:default_bg = s:black
@@ -111,6 +112,8 @@ call s:hi('Todo', s:black, s:yellow, s:bold)
 " Signs.
 hi clear SignColumn
 
+" Diagnostic
+call s:hi('DiagnosticHint', s:yellow)
 "
 " --- Programming languages ----------------------------------------------------
 "
