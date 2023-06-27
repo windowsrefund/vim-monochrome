@@ -21,7 +21,7 @@ let s:cgray  = ['#737373', 243]
 let s:dgray  = ['DarkGray', 248]
 let s:sblue  = ['#778899', 67]
 " From https://github.com/shaunsingh/nord.nvim/blob/master/lua/nord/named_colors.lua
-let s:yellow = ['#EBCBBB', 226]
+let s:yellow = ['#D68779', 226]
 let s:red    = ['#BF616A', 160]
 let s:green  = ['#A3BE8C', 28]
 
@@ -218,6 +218,7 @@ call s:hi('diffLine', s:cgray)
 call s:hi('diffSubname', s:cgray)
 call s:hi('diffAdded', s:green)
 call s:hi('diffRemoved', s:red)
+hi clear DiffChange
 call s:hi('DiffChange', s:sblue)
 
 
